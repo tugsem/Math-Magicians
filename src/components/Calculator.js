@@ -32,7 +32,7 @@ export default class Calculator extends Component {
                     <td><input className='button' type='button' value={7} onClick= {this.handleClick}/></td>
                     <td><input className='button' type='button' value={8} onClick= {this.handleClick}/></td> 
                     <td><input className='button' type='button' value={9} onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='X' onClick= {this.handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='x' onClick= {this.handleClick}/></td> 
                     </tr>
                     <tr>
                     <td><input className='button' type='button' value={4} onClick= {this.handleClick}/></td>
