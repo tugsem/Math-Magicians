@@ -6,7 +6,7 @@ export default function Calculator() {
     const handleClick = (e) => {
         setResult(calculate(result, e.target.value));
     }
-        return (
+    return (
             <table className='calculator'>
                 <tbody>
                     <tr>
@@ -43,5 +43,5 @@ export default function Calculator() {
                     </tr>
                 </tbody>
             </table>
-        )
+    )
 }
