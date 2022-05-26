@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-.displayBox {
+input.displayBox {
   width: 100%;
   text-align: end;
   padding: 20px 0;

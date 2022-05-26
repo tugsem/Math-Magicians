@@ -12,7 +12,6 @@ export default class Calculator extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick = (e) => {
-        console.log({...this.state})
         this.setState(calculate({...this.state}, e.target.value));
     }
     render() {
