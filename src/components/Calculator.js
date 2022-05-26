@@ -1,58 +1,47 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate.js';
 
-export default class Calculator extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            total: '',
-            next: '',
-            operation: '',
-        };
-        this.handleClick = this.handleClick.bind(this);
+export default function Calculator() {
+   const [result, setResult] = useState({total: '', next: '', operation: ''});
+    const handleClick = (e) => {
+        setResult(calculate(result, e.target.value));
     }
-    handleClick = (e) => {
-        console.log({...this.state})
-        this.setState(calculate({...this.state}, e.target.value));
-    }
-    render() {
         return (
             <table className='calculator'>
                 <tbody>
                     <tr>
-                        <td colSpan={4}><input className='displayBox' type='text' value={this.state.next || this.state.total || '0'} disabled/></td>
+                        <td colSpan={4}><input className='displayBox' type='text' value={result.next || result.total || '0'} disabled/></td>
                     </tr>
                     <tr>
-                    <td><input className='button' type='button' value='AC' onClick= {this.handleClick}/></td>
-                    <td><input className='button' type='button' value='+/-' onClick= {this.handleClick}/> </td>
-                    <td><input className='button' type='button' value='%' onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='÷' onClick= {this.handleClick}/></td> 
+                    <td><input className='button' type='button' value='AC' onClick= {handleClick}/></td>
+                    <td><input className='button' type='button' value='+/-' onClick= {handleClick}/> </td>
+                    <td><input className='button' type='button' value='%' onClick= {handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='÷' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
-                    <td><input className='button' type='button' value={7} onClick= {this.handleClick}/></td>
-                    <td><input className='button' type='button' value={8} onClick= {this.handleClick}/></td> 
-                    <td><input className='button' type='button' value={9} onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='x' onClick= {this.handleClick}/></td> 
+                    <td><input className='button' type='button' value={7} onClick= {handleClick}/></td>
+                    <td><input className='button' type='button' value={8} onClick= {handleClick}/></td> 
+                    <td><input className='button' type='button' value={9} onClick= {handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='x' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
-                    <td><input className='button' type='button' value={4} onClick= {this.handleClick}/></td>
-                    <td><input className='button' type='button' value={5} onClick= {this.handleClick}/></td> 
-                    <td><input className='button' type='button' value={6} onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='-' onClick= {this.handleClick}/></td> 
+                    <td><input className='button' type='button' value={4} onClick= {handleClick}/></td>
+                    <td><input className='button' type='button' value={5} onClick= {handleClick}/></td> 
+                    <td><input className='button' type='button' value={6} onClick= {handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='-' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
-                    <td><input className='button' type='button' value={1} onClick= {this.handleClick}/></td>
-                    <td><input className='button' type='button' value={2} onClick= {this.handleClick}/></td> 
-                    <td><input className='button' type='button' value={3} onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='+' onClick= {this.handleClick}/></td>
+                    <td><input className='button' type='button' value={1} onClick= {handleClick}/></td>
+                    <td><input className='button' type='button' value={2} onClick= {handleClick}/></td> 
+                    <td><input className='button' type='button' value={3} onClick= {handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='+' onClick= {handleClick}/></td>
                     </tr>
                     <tr>
-                    <td colSpan={2}><input className='button' type='button' value={0} onClick= {this.handleClick}/></td>
-                    <td><input className='button' type='button' value='.' onClick= {this.handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='=' id='equal' onClick={this.handleClick}/></td> 
+                    <td colSpan={2}><input className='button' type='button' value={0} onClick= {handleClick}/></td>
+                    <td><input className='button' type='button' value='.' onClick= {handleClick}/></td> 
+                    <td><input className='button orange' type='button' value='=' id='equal' onClick={handleClick}/></td> 
                     </tr>
                 </tbody>
             </table>
         )
-    }
 }
