@@ -7,6 +7,8 @@ export default function Calculator() {
         setResult(calculate(result, e.target.value));
     }
     return (
+        <div className='calContainer'>
+        <h1>Let's Do Some Math!</h1>
             <table className='calculator'>
                 <tbody>
                     <tr>
@@ -16,32 +18,33 @@ export default function Calculator() {
                     <td><input className='button' type='button' value='AC' onClick= {handleClick}/></td>
                     <td><input className='button' type='button' value='+/-' onClick= {handleClick}/> </td>
                     <td><input className='button' type='button' value='%' onClick= {handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='÷' onClick= {handleClick}/></td> 
+                    <td><input className='button secondColor' type='button' value='÷' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
                     <td><input className='button' type='button' value={7} onClick= {handleClick}/></td>
                     <td><input className='button' type='button' value={8} onClick= {handleClick}/></td> 
                     <td><input className='button' type='button' value={9} onClick= {handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='x' onClick= {handleClick}/></td> 
+                    <td><input className='button secondColor' type='button' value='x' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
                     <td><input className='button' type='button' value={4} onClick= {handleClick}/></td>
                     <td><input className='button' type='button' value={5} onClick= {handleClick}/></td> 
                     <td><input className='button' type='button' value={6} onClick= {handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='-' onClick= {handleClick}/></td> 
+                    <td><input className='button secondColor' type='button' value='-' onClick= {handleClick}/></td> 
                     </tr>
                     <tr>
                     <td><input className='button' type='button' value={1} onClick= {handleClick}/></td>
                     <td><input className='button' type='button' value={2} onClick= {handleClick}/></td> 
                     <td><input className='button' type='button' value={3} onClick= {handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='+' onClick= {handleClick}/></td>
+                    <td><input className='button secondColor' type='button' value='+' onClick= {handleClick}/></td>
                     </tr>
                     <tr>
                     <td colSpan={2}><input className='button' type='button' value={0} onClick= {handleClick}/></td>
                     <td><input className='button' type='button' value='.' onClick= {handleClick}/></td> 
-                    <td><input className='button orange' type='button' value='=' id='equal' onClick={handleClick}/></td> 
+                    <td><input className='button secondColor' type='button' value='=' id='equal' onClick={handleClick}/></td> 
                     </tr>
                 </tbody>
             </table>
+        </div> 
     )
 }
