@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-weight: 500;
-  font-size: large;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 body {
   min-height: 100vh;
+  font-family: sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(197deg, rgba(2, 0, 36, 1) 0%, rgba(55, 67, 223, 0.4066001400560224) 47%, rgb(5, 224, 53) 100%);
 }
 
 input.displayBox {
@@ -28,6 +32,50 @@ input.displayBox {
   cursor: pointer;
 }
 
-.orange {
-  background-color: #f5913e;
+.secondColor {
+  background-color: #3ef575;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px 5%;
+}
+
+.navList {
+  display: flex;
+  gap: 0 20px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.subTitle {
+  margin: 10px 5%;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.home > p {
+  margin: 10px 5%;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.calContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10%;
 }
