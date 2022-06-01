@@ -35,6 +35,11 @@ To get a local copy up and running follow these simple example steps:
 
 - Install npm: 
  `npm install`
+ 
+ ### Testing
+
+- run npm test: 
+ `npm test`
 
 ### Usage
 
@@ -45,10 +50,15 @@ To get a local copy up and running follow these simple example steps:
 
 👤 **Tuğsem Saranlı**
 
-- GitHub: [@githubhandle](https://github.com/tugsem)
-- Twitter: [@twitterhandle](https://twitter.com/TugsemSaranli)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tuğsem-saranlı-5b2a98230/?locale=en_US)
+- GitHub: [@tugsem](https://github.com/tugsem)
+- Twitter: [@TugsemSaranli](https://twitter.com/TugsemSaranli)
+- LinkedIn: [Tuğsem Saranlı](https://www.linkedin.com/in/tuğsem-saranlı-5b2a98230/?locale=en_US)
 
+👤 **Ali Jendoubi**
+
+- GitHub: [@ichala](https://github.com/ichala)
+- Twitter: [@_ichala](https://twitter.com/_ichala)
+- LinkedIn: [alijendoubi](https://www.linkedin.com/in/alijendoubi/)
 
 ## Show your support
 
