@@ -1,8 +1,8 @@
 import renderer  from 'react-test-renderer';
-import Calculator from '../components/Calculator';
+import Navbar from '../components/Navbar';
 
 it('Renders correctly',()=>{
     const tree = renderer.create(
-        <Calculator />).toJSON();
+        <Navbar />).toJSON();
         expect(tree).toMatchSnapshot();
 })
