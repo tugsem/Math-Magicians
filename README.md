@@ -14,6 +14,7 @@
 ## Live Demo 
 
 [Live Demo Link](https://tugsem.github.io/math-magicians)
+[Heroku](https://fast-stream-72369.herokuapp.com)
 
 ## Getting Started
 
