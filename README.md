@@ -15,7 +15,7 @@
 
 - [Live Demo Link](https://tugsem.github.io/math-magicians)
 - [Heroku](https://fast-stream-72369.herokuapp.com)
-- [Netlify](https://fast-stream-72369.herokuapp.com](https://6298d146a58fcf346aff4fe2--vocal-phoenix-be459e.netlify.app)
+- [Netlify](https://6298d146a58fcf346aff4fe2--vocal-phoenix-be459e.netlify.app)
 
 ## Getting Started
 
